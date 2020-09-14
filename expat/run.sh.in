@@ -2,8 +2,8 @@
 # Copyright (C) 2017 Expat development team
 # Licensed under the MIT license
 
-case "@host@" in
-*-mingw*)
+case "@build@-@host@" in
+*linux*-mingw*)
     exec wine "$@"
     ;;
 *)
